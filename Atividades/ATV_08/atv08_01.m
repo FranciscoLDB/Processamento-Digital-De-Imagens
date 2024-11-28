@@ -1,14 +1,13 @@
-% atv08_01.m
+% 8.1) Propriedade da separabilidade
 clear; clc; close all;
 
-% Leitura da imagem (substitua pelo caminho do arquivo se necessário)
-img = imread('carro1mm_nperiodic.png'); 
+img = imread('cameraman.tif'); 
 
 % Verifica se a imagem é colorida e converte para escala de cinza se necessário
 if size(img, 3) == 3
-    img = rgb2gray(img); % Converte imagens RGB para escala de cinza
+    img = rgb2gray(img);
 end
-img = double(img); % Converte para double para cálculos
+img = double(img);
 
 % Cálculo da DFT 2D pela separabilidade (usando DFTs 1D)
 dftr = fft(img, [], 1); % DFT das linhas

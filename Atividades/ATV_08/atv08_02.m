@@ -1,4 +1,4 @@
-%: atv08_02.m
+% 8.2) Invariabilidade do espectro à translação e resposta à rotação
 clear; clc; close all;
 
 % Tamanho da imagem
